@@ -73,7 +73,9 @@
     "updates": [
         {
             "added": ["Better geometrical square root"],
-            "removed": ["Geometrical square root"]
+            "removed": ["Geometrical square root"],
+            "name": "Kenni",
+            "description": "Adding in a better geometrical square root resource!"
         }
     ]
 }
