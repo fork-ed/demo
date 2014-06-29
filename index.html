@@ -68,10 +68,18 @@
   </div><!-- /.container-fluid -->
 </nav>
 
-
     <div class="container">
+        <section class="media">
+                <a class="pull-left" ng-href="">
+                    <img class="media-object" ng-src="{{ (people | filter:{name: course})[0].picture }}">
+                </a>
+                <section class="media-body">
+                    <h1>{{ course }}'s Course</h1>
+                </section>
+         </section>
+
         <article class="content well">
-            <section class="media" ng-repeat="content in contents[person]">
+            <section class="media" ng-repeat="content in contents[course]">
                 <a class="pull-left" ng-href="{{content.URL}}">
                     <img class="media-object" data-src="holder.js/64x64">
                 </a>
@@ -85,7 +93,7 @@
         </article>
 
         <article class="updates well">
-            <section class="media" ng-repeat="update in updates[person]">
+            <section class="media" ng-repeat="update in updates[course]">
                 <a class="pull-left" ng-href="">
                     <img class="media-object" ng-src="{{ (people | filter:{name: update.name})[0].picture }}">
                 </a>
@@ -99,24 +107,21 @@
                                     <span class="label label-success">
                                         <span class="glyphicon glyphicon-plus-sign"></span>
                                     </span>
-                                    <a ng-href="(contents[person] | filter:{name: added})[0].URL"
-                                       ng-bind="(contents[person] | filter:{name: added})[0].name"></a>
+                                    <a ng-href="(contents[course] | filter:{name: added})[0].URL"
+                                       ng-bind="(contents[course] | filter:{name: added})[0].name"></a>
                                 </li>
                                 <li ng-repeat="removal in update.removed">
                                     <span class="label label-danger">
                                         <span class="glyphicon glyphicon-minus-sign"></span>
                                     </span>
-                                    <a ng-href="(contents[person] | filter:{name: removal})[0].URL"
-                                       ng-bind="(contents[person] | filter:{name: removal})[0].name"></a>
+                                    <a ng-href="(contents[course] | filter:{name: removal})[0].URL"
+                                       ng-bind="(contents[course] | filter:{name: removal})[0].name"></a>
                                 </li>
                             </ul>
                         </div>
-                        <div class="btn-group col-md-2">
-                            <button class="btn btn-success col-md-6">
+                        <div class="col-md-2">
+                            <button class="btn btn-success" ng-click="changePerson(user)">
                                 <span class="glyphicon glyphicon-plus"></span>
-                            </button>
-                            <button class="btn col-md-6">
-                                <span class="glyphicon glyphicon-minus"></span>
                             </button>
                         </div>
                     </section>
