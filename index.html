@@ -107,15 +107,15 @@
                                     <span class="label label-success">
                                         <span class="glyphicon glyphicon-plus-sign"></span>
                                     </span>
-                                    <a ng-href="(contents[course] | filter:{name: added})[0].URL"
-                                       ng-bind="(contents[course] | filter:{name: added})[0].name"></a>
+                                    <a ng-href="(contents[course] | filter:{name: addition}:true)[0].URL"
+                                       ng-bind="addition"></a>
                                 </li>
                                 <li ng-repeat="removal in update.removed">
                                     <span class="label label-danger">
                                         <span class="glyphicon glyphicon-minus-sign"></span>
                                     </span>
-                                    <a ng-href="(contents[course] | filter:{name: removal})[0].URL"
-                                       ng-bind="(contents[course] | filter:{name: removal})[0].name"></a>
+                                    <a ng-href="(contents[course] | filter:{name: removal}:true)[0].URL"
+                                       ng-bind="removal"></a>
                                 </li>
                             </ul>
                         </div>
