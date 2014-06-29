@@ -70,9 +70,10 @@
 
     <div class="container">
         <section class="media">
-                <a class="pull-left" ng-href="">
+                <a class="pull-left" style="text-align: center" ng-href="">
                     <img class="media-object" ng-src="{{ (people | filter:{name: course})[0].picture }}">
-                    <div style="text-align: center;">
+                    <div style="width: 70px;">
+                        <p><small>{{ (people | filter:{name: course})[0].uni }}</small></p>
                         <span class="badge alert-danger">{{ (people | filter:{name: course})[0].score }}</span>
                     </div>
                 </a>
@@ -99,9 +100,10 @@
 
         <article class="updates well">
             <section class="media" ng-repeat="update in updates[course]">
-                <a class="pull-left" ng-href="">
+                <a class="pull-left" style="text-align: center" ng-href="">
                     <img class="media-object" ng-src="{{ (people | filter:{name: update.name})[0].picture }}">
-                    <div style="text-align: center;">
+                    <div style="width: 70px;">
+                        <p><small>{{ (people | filter:{name: update.name})[0].uni }}</small></p>
                         <span class="badge alert-danger">{{ (people | filter:{name: update.name})[0].score }}</span>
                     </div>
                 </a>

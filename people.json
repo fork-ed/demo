@@ -3,16 +3,19 @@
         {
             "name": "Kenni",
             "picture": "images/kenni.jpg",
+            "uni": "University of Hard Knocks",
             "score": 14
         },
         {
             "name": "Sergei",
             "picture": "images/sergei.jpg",
+            "uni": "University of EduTech",
             "score": 2031
         },
         {
             "name": "Will",
             "picture": "images/will.jpg",
+            "uni": "University of New England",
             "score": 116
         }
     ]
