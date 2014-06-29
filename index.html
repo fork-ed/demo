@@ -40,31 +40,36 @@
                     <img class="media-object" data-src="{{ update.person.image }}">
                 </a>
                 <section class="media-body">
-                    <div>
-                        <p ng-bind="update.description"></p>
-                    </div>
-                    <div>
-                        <ul>
-                            <li ng-repeat="addition in update.added">
-                                <span class="label label-success">Added</span>
-                                <a ng-href="(contents[person] | filter:{name: added})[0].URL"
-                                   ng-bind="(contents[person] | filter:{name: added})[0].name"></a>
-                            </li>
-                            <li ng-repeat="removal in update.removed">
-                                <span class="label label-danger">Removed</span>
-                                <a ng-href="(contents[person] | filter:{name: removal})[0].URL"
-                                   ng-bind="(contents[person] | filter:{name: removal})[0].name"></a>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="">
-                        <button class="btn">
-                            <span class="glyphicon glyphicon-plus"></span>
-                        </button>
-                        <button class="btn">
-                            <span class="glyphicon glyphicon-minus"></span>
-                        </button>
-                    </div>
+                    <p ng-bind="update.description"></p>
+
+                    <section>
+                        <div class="col-md-10">
+                            <ul>
+                                <li ng-repeat="addition in update.added">
+                                    <span class="label label-success">
+                                        <span class="glyphicon glyphicon-plus-sign"></span>
+                                    </span>
+                                    <a ng-href="(contents[person] | filter:{name: added})[0].URL"
+                                       ng-bind="(contents[person] | filter:{name: added})[0].name"></a>
+                                </li>
+                                <li ng-repeat="removal in update.removed">
+                                    <span class="label label-danger">
+                                        <span class="glyphicon glyphicon-minus-sign"></span>
+                                    </span>
+                                    <a ng-href="(contents[person] | filter:{name: removal})[0].URL"
+                                       ng-bind="(contents[person] | filter:{name: removal})[0].name"></a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="btn-group col-md-2">
+                            <button class="btn btn-success col-md-6">
+                                <span class="glyphicon glyphicon-plus"></span>
+                            </button>
+                            <button class="btn col-md-6">
+                                <span class="glyphicon glyphicon-minus"></span>
+                            </button>
+                        </div>
+                    </section>
                 </section>
             </section>
         </article>
