@@ -88,13 +88,11 @@
         },
         {
             "added": ["Video on parallel and Perpendicular Lines"],
-            "removed": [""],
             "name": "Sergei",
             "description": "Adding in a video on parallel vs perpendicular lines. This should help students learn this topic easier."
         },
         {
             "added": ["Square tree root", "Square root manipulation", "Square root on clock", "Scientific Notation", "Mean, Median, Mode Quiz", "Volume of a Solid", "Polygons", "Cirle graphs", "Rewrite number as fraction", "Video on congruent triangles"],
-            "removed": [""],
             "name": "Sergei",
             "description": "Adding initial content!"
         }
