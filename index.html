@@ -2,15 +2,13 @@
 <meta charset="utf-8">
 <html ng-app="demo" ng-controller="demoCtrl">
 <head>
-   <title>{{ title }}</title>
+    <title>{{ title }}</title>
 
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-   <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
-
-   <script src="http://code.jquery.com/jquery.js"></script>
-   <script src="bootstrap/js/bootstrap.js"></script>
-   <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
 </head>
 
 <body>
@@ -37,7 +35,7 @@
 
     <div class="container">
         <article class="content well">
-            <section class="media" ng-repeat="content in contents">
+            <section class="media" ng-repeat="content in contents[person]">
                 <a class="pull-left" ng-href="{{content.URL}}">
                     <img class="media-object" data-src="holder.js/64x64">
                 </a>
@@ -51,24 +49,36 @@
         </article>
 
         <article class="updates well">
-            <section class="media" ng-repeat="update in updates">
+            <section class="media" ng-repeat="update in updates[person]">
                 <a class="pull-left" ng-href="">
                     <img class="media-object" data-src="{{ update.person.image }}">
                 </a>
                 <section class="media-body">
-                    <p ng-bind="update.description"></p>
-                    <ul>
-                        <li ng-repeat="addition in update.added">
-                            <span class="label label-success">Added</span>
-                            <a ng-href="(contents | filter:{name: added})[0].URL"
-                               ng-bind="(contents | filter:{name: added})[0].name"></a>
-                        </li>
-                        <li ng-repeat="removal in update.removed">
-                            <span class="label label-important">Removed</span>
-                            <a ng-href="(contents | filter:{name: removal})[0].URL"
-                               ng-bind="(contents | filter:{name: removal})[0].name"></a>
-                        </li>
-                    </ul>
+                    <div>
+                        <p ng-bind="update.description"></p>
+                    </div>
+                    <div>
+                        <ul>
+                            <li ng-repeat="addition in update.added">
+                                <span class="label label-success">Added</span>
+                                <a ng-href="(contents | filter:{name: added})[0].URL"
+                                   ng-bind="(contents | filter:{name: added})[0].name"></a>
+                            </li>
+                            <li ng-repeat="removal in update.removed">
+                                <span class="label label-important">Removed</span>
+                                <a ng-href="(contents | filter:{name: removal})[0].URL"
+                                   ng-bind="(contents | filter:{name: removal})[0].name"></a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="">
+                        <button class="btn">
+                            <span class="glyphicon glyphicon-plus"></span>
+                        </button>
+                        <button class="btn">
+                            <span class="glyphicon glyphicon-minus"></span>
+                        </button>
+                    </div>
                 </section>
             </section>
         </article>

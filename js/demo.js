@@ -2,10 +2,20 @@ angular.module('demo', []).
     value('title', 'TeachUp').
     controller('demoCtrl', function($scope, $http, title) {
         $scope.title = title;
-        $scope.content = 
+        $scope.person = 'B';
+
+        $scope.contents = {};
+        $scope.updates = {};
+        
         $http.get('curriculumA.json')
             .then(function(res) {
-                $scope.contents = res.data.content;
-                $scope.updates = res.data.updates;
+                $scope.contents['A'] = res.data.content;
+                $scope.updates['A'] = res.data.updates;
+            });
+
+        $http.get('curriculumB.json')
+            .then(function(res) {
+                $scope.contents['B'] = res.data.content;
+                $scope.updates['B'] = res.data.updates;
             });
     });
