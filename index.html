@@ -37,7 +37,7 @@
         <article class="updates well">
             <section class="media" ng-repeat="update in updates[person]">
                 <a class="pull-left" ng-href="">
-                    <img class="media-object" data-src="{{ update.person.image }}">
+                    <img class="media-object" ng-src="{{ (people | filter:{name: update.name})[0].picture }}">
                 </a>
                 <section class="media-body">
                     <p ng-bind="update.description"></p>
