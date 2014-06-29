@@ -23,6 +23,7 @@ angular.module('demo', []).
         $http.get('people.json')
             .then(function(res) {
                 $scope.people = res.data.people;
+                //
             });
         
         $scope.changePerson = function(person) {
