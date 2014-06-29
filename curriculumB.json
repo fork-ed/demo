@@ -1,6 +1,12 @@
 {
     "content": [
         {
+            "name": "Better geometrical square root",
+            "URL": "http://upload.wikimedia.org/wikipedia/commons/a/a6/Square_root_of_2_triangle.svg",
+            "type": "Quiz",
+            "description": "Find square root geometrically"
+        },
+        {
             "name": "Scientific Notation",
             "URL": "http://au.ixl.com/math/year-7/scientific-notation",
             "type": "Quiz",
@@ -51,15 +57,21 @@
     ],
     "updates": [
         {
+            "added": ["Better geometrical square root"],
+            "removed": ["Geometrical square root"],
+            "name": "Sergei",
+            "description": "Adding in a better geometrical square root resource!"
+        },
+        {
             "added": ["Scientific Notation", "Video on parallel and Perpendicular Lines"],
             "removed": ["Video on congruent triangles"],
-            "name": "Kenni",
+            "name": "Will",
             "description": "More relevant resources for your students. I also added a video on parallel and perpendicular lines."
         },
         {
             "added": ["Rewrite number as fraction"],
             "removed": ["Mean, Median, Mode Quiz"],
-            "name": "Sergei",
+            "name": "Kenni",
             "description": "My first update on Tweak-ed! I'm so excited!"
         }
     ]
