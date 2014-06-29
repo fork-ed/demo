@@ -20,12 +20,60 @@
 { "name": "Better geometrical square root",
   "URL": "http://upload.wikimedia.org/wikipedia/commons/a/a6/Square_root_of_2_triangle.svg",
   "description": "Find square root geometrically"
-}
+},
+        {
+            "name": "Scientific Notation",
+            "URL": "http://au.ixl.com/math/year-7/scientific-notation",
+            "type": "Quiz",
+            "description": "An online quiz for Year 7 Scientific Notation"
+        },
+        {
+            "name": "Mean, Median, Mode Quiz",
+            "URL": "http://au.ixl.com/math/year-7/calculate-mean-median-mode-and-range",
+            "type": "Quiz",
+            "description": "An online quiz for learning Mean, Median and Mode"
+        },
+        {
+            "name": "Volume of a Solid",
+            "URL": "http://www.mathsteacher.com.au/year7/ch14_volume/02_solid/solid.htm",
+            "type": "Text",
+            "description": "Pictures and example questions explaining how to calculate the volume of a solid."
+        },
+        {
+            "name": "Polygons",
+            "URL": "http://www.mathsteacher.com.au/year7/ch09_polygons/05_polygon/pol.htm",
+            "type": "Text",
+            "description": "Pictures and text on the different types of polygons. It also explains the difference between a regular and irregular polygon."
+        },
+        {
+            "name": "Cirle graphs",
+            "URL": "http://www.mathopolis.com/questions/q.php?id=5581",
+            "type": "Quiz",
+            "description": "A fairly easy quiz on Circle graphs e.g. converting bar charts to pie charts and calculating angles that sectors make."
+        },
+        {
+            "name": "Rewrite number as fraction",
+            "URL": "http://pad3.whstatic.com/images/thumb/d/d9/Multiply-Fractions-With-Whole-Numbers-Step-2.jpg/670px-Multiply-Fractions-With-Whole-Numbers-Step-2.jpg",
+            "type": "Image",
+            "description": "An example of rewriting a number as a fraction"
+        },
+        {
+            "name": "Video on congruent triangles",
+            "URL": "https://www.youtube.com/watch?v=oYtoCiXL8Co",
+            "type": "Video",
+            "description": "A video explaining the basics of congruent triangles within Year 7 Geometry."
+        },
+        {
+            "name": "Video on parallel and Perpendicular Lines",
+            "URL": "https://www.youtube.com/watch?v=Rew54K6mYUo",
+            "type": "Video",
+            "description": "A video explaining the difference between Parallel and Perpendicular Lines"
+        }
     ],
     "updates": [
         {
-            "added": [],
-            "removed": []
+            "added": ["Better geometrical square root"],
+            "removed": ["Geometrical square root"]
         }
     ]
 }
