@@ -1,16 +1,16 @@
 {
     "people": [
         {
-            "name": ["Kenni"],
-            "picture": ["images/2014-06-29 14.29.16.jpg"]
+            "name": "Kenni",
+            "picture": "images/2014-06-29 14.29.16.jpg"
         },
         {
-            "name": ["Sergei"],
-            "picture": ["images/2014-06-29 14.28.44.jpg"]
+            "name": "Sergei",
+            "picture": "images/2014-06-29 14.28.44.jpg"
         },
         {
-            "name": ["Will"],
-            "picture": ["images/2014-06-29 14.28.10.jpg"]
+            "name": "Will",
+            "picture": "images/2014-06-29 14.28.10.jpg"
         }
     ]
 }
