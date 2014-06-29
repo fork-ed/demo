@@ -22,7 +22,7 @@
 
     <div class="container">
         <article class="content well">
-            <section class="media" ng-repeat="content in contents">
+            <section class="media" ng-repeat="content in contents[person]">
                 <a class="pull-left" ng-href="{{content.URL}}">
                     <img class="media-object" data-src="holder.js/64x64">
                 </a>
@@ -36,7 +36,7 @@
         </article>
 
         <article class="updates well">
-            <section class="media" ng-repeat="update in updates">
+            <section class="media" ng-repeat="update in updates[person]">
                 <a class="pull-left" ng-href="">
                     <img class="media-object" data-src="{{ update.person.image }}">
                 </a>
