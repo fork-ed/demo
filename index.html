@@ -7,30 +7,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
 </head>
 
 <body>
-<div class="navbar">
-  <div class="navbar-inner">
-    <a class="brand" href="#">{{ title }}</a>
-    <ul class="nav">
-      <li class="active"><a href="#">Home</a></li>
-      <li><a href="#">Link</a></li>
-      <li><a href="#">Link</a></li>
-    </ul>
-<div class="btn-group pull-right">
-  <a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
-    Kenni Bawden
-    <span class="caret"></span>
-  </a>
-  <ul class="dropdown-menu">
-    <!-- dropdown menu links -->
-  </ul>
-</div>  </div>
-</div>
+<nav class="navbar navbar-default" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">{{ title }}</a>
+    </div>
 
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class=""><a href="#">My Courses</a></li>
+        <li class=""><a href="#">New Course</a></li>
+        <li>
+      <form class="navbar-form navbar-left" role="search">
+        <div class="input-group">
+          <input type="text" class="form-control" placeholder="Search courses">
+        </div>
+        <button type="submit" class="btn btn-default"><span class="glyphicon glyphicon-search"></span></button>
+      </form>
+
+        </li>
+        <li class=""><a href="#"><strong>Explore</strong></a></li>
+        <li class=""><a href="#"><strong>Blog</strong></a></li>
+        <li class=""><a href="#"><strong>About</strong></a></li>
+        <li class=""><a href="#"><strong>Help</strong></a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown"><img src="kenni.png" class="img-rounded"/> Kenni Bawden <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+            <li><a href="#">Profile</a></li>
+            <li><a href="#">Security</a></li>
+            <li class="divider"></li>
+            <li><a href="#">Logout</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
 
 
     <div class="container">
@@ -61,13 +89,13 @@
                         <ul>
                             <li ng-repeat="addition in update.added">
                                 <span class="label label-success">Added</span>
-                                <a ng-href="(contents | filter:{name: added})[0].URL"
-                                   ng-bind="(contents | filter:{name: added})[0].name"></a>
+                                <a ng-href="(contents[person] | filter:{name: added})[0].URL"
+                                   ng-bind="(contents[person] | filter:{name: added})[0].name"></a>
                             </li>
                             <li ng-repeat="removal in update.removed">
-                                <span class="label label-important">Removed</span>
-                                <a ng-href="(contents | filter:{name: removal})[0].URL"
-                                   ng-bind="(contents | filter:{name: removal})[0].name"></a>
+                                <span class="label label-danger">Removed</span>
+                                <a ng-href="(contents[person] | filter:{name: removal})[0].URL"
+                                   ng-bind="(contents[person] | filter:{name: removal})[0].name"></a>
                             </li>
                         </ul>
                     </div>
