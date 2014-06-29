@@ -24,8 +24,9 @@
     ],
     "updates": [
         {
-            "added": [],
-            "removed": []
+            "added": ["Better geometrical square root"],
+            "removed": ["Geometrical square root"]
         }
     ]
+
 }
