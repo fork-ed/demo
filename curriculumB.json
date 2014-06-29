@@ -59,8 +59,14 @@
         {
             "added": ["Rewrite number as fraction"],
             "removed": ["Mean, Median, Mode Quiz"],
-            "name": "Sergei",
+            "name": "Will",
             "description": "My first update on Tweak-ed! I'm so excited!"
+        },
+        {
+            "added": ["Video on parallel and Perpendicular Lines"],
+            "removed": [""],
+            "name": "Sergei",
+            "description": "Scientific Notation! This topic m.akes sure students kno.w how to use decim.al places in the rig.ht location"
         }
     ]
 }
