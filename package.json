@@ -1,0 +1,20 @@
+{
+  "name": "swedu-demo",
+  "version": "0.0.0",
+  "description": "SWEDU pitch demo",
+  "author": "Kenni Bawden",
+  "dependencies": {
+    "angular": "^1.2.18"
+  },
+  "dev-dependencies": {},
+  "scripts": {
+    "dev-start": "beefy js/splash.js --live && catw -c 'lessc -' './style/*.less' -o './css/demo.css'",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "beefy": "^2.0.2",
+    "browserify": "^4.2.0",
+    "catw": "^0.2.0",
+    "less": "^1.7.3"
+  }
+}
