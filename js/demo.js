@@ -2,7 +2,7 @@ angular.module('demo', []).
     value('title', 'TeachUp').
     controller('demoCtrl', function($scope, $http, title) {
         $scope.title = title;
-        $scope.person = 'A';
+        $scope.person = 'B';
 
         $scope.contents = {};
         $scope.updates = {};
