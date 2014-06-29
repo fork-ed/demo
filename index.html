@@ -61,6 +61,15 @@
 </nav>
 
     <div class="container">
+        <section class="media">
+                <a class="pull-left" ng-href="">
+                    <img class="media-object" ng-src="{{ (people | filter:{name: course})[0].picture }}">
+                </a>
+                <section class="media-body">
+                    <h1>{{ course }}'s Course</h1>
+                </section>
+         </section>
+
         <article class="content well">
             <section class="media" ng-repeat="content in contents[course]">
                 <a class="pull-left" ng-href="{{content.URL}}">
