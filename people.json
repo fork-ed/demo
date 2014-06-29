@@ -2,15 +2,15 @@
     "people": [
         {
             "name": "Kenni",
-            "picture": "images/2014-06-29 14.29.16.jpg"
+            "picture": "images/kenni.jpg"
         },
         {
             "name": "Sergei",
-            "picture": "images/2014-06-29 14.28.44.jpg"
+            "picture": "images/sergei.jpg"
         },
         {
             "name": "Will",
-            "picture": "images/2014-06-29 14.28.10.jpg"
+            "picture": "images/will.jpg"
         }
     ]
 }
