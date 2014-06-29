@@ -22,7 +22,17 @@
 
     <div class="container">
         <article class="content well">
-            
+            <section class="media" ng-repeat="content in contents">
+                <a class="pull-left" ng-href="{{content.url}}">
+                    <img class="media-object" data-src="holder.js/64x64">
+                </a>
+                <section class="media-body">
+                    <a ng-href="{{content.url}}">
+                        <h2 class="media-heading">{{ content.name }}</h2>
+                    </a>
+                    <p ng-bind="content.description"></p>
+                </section>
+            </section>
         </article>
 
         <article class="updates well">
