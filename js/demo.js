@@ -23,4 +23,8 @@ angular.module('demo', []).
             .then(function(res) {
                 $scope.people = res.data.people;
             });
+        
+        $scope.changePerson = function(person) {
+            $scope.person = person;
+        };
     });
