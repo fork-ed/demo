@@ -51,8 +51,12 @@
     ],
     "updates": [
         {
-            "added": [""],
-            "removed": [""]
+            "added": ["Scientific Notation", "Video on parallel and Perpendicular Lines"],
+            "removed": ["Video on congruent triangles"]
+        },
+        {
+            "added": ["Rewrite number as fraction"],
+            "removed": ["Mean, Median, Mode Quiz"]
         }
     ]
 }
