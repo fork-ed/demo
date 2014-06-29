@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <script src="http://code.jquery.com/jquery.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.0-beta.13/angular.min.js"></script>
 </head>
@@ -46,13 +47,13 @@
                         <ul>
                             <li ng-repeat="addition in update.added">
                                 <span class="label label-success">Added</span>
-                                <a ng-href="(contents | filter:{name: added})[0].URL"
-                                   ng-bind="(contents | filter:{name: added})[0].name"></a>
+                                <a ng-href="(contents[person] | filter:{name: added})[0].URL"
+                                   ng-bind="(contents[person] | filter:{name: added})[0].name"></a>
                             </li>
                             <li ng-repeat="removal in update.removed">
-                                <span class="label label-important">Removed</span>
-                                <a ng-href="(contents | filter:{name: removal})[0].URL"
-                                   ng-bind="(contents | filter:{name: removal})[0].name"></a>
+                                <span class="label label-danger">Removed</span>
+                                <a ng-href="(contents[person] | filter:{name: removal})[0].URL"
+                                   ng-bind="(contents[person] | filter:{name: removal})[0].name"></a>
                             </li>
                         </ul>
                     </div>
