@@ -52,11 +52,15 @@
     "updates": [
         {
             "added": ["Scientific Notation", "Video on parallel and Perpendicular Lines"],
-            "removed": ["Video on congruent triangles"]
+            "removed": ["Video on congruent triangles"],
+            "name": "Kenni",
+            "description": "More relevant resources for your students. I also added a video on parallel and perpendicular lines."
         },
         {
             "added": ["Rewrite number as fraction"],
-            "removed": ["Mean, Median, Mode Quiz"]
+            "removed": ["Mean, Median, Mode Quiz"],
+            "name": "Sergei",
+            "description": "My first update on Tweak-ed! I'm so excited!"
         }
     ]
 }
