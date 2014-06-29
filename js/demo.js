@@ -1,5 +1,5 @@
 angular.module('demo', []).
-    value('title', 'TeachUp').
+    value('title', 'tweak ed').
     controller('demoCtrl', function($scope, $http, title) {
         $scope.title = title;
         $scope.person = 'B';
