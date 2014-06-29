@@ -2,15 +2,18 @@
     "people": [
         {
             "name": "Kenni",
-            "picture": "images/kenni.jpg"
+            "picture": "images/kenni.jpg",
+            "score": 14
         },
         {
             "name": "Sergei",
-            "picture": "images/sergei.jpg"
+            "picture": "images/sergei.jpg",
+            "score": 2031
         },
         {
             "name": "Will",
-            "picture": "images/will.jpg"
+            "picture": "images/will.jpg",
+            "score": 116
         }
     ]
 }
